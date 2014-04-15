@@ -1,0 +1,43 @@
+Recommendation.c:
+Contains a C program which gathers purchase data from a file which includes
+customer IDs and item numbers. It then creates a single List item for each
+customer, where the nodes are their individual item purchases. It then
+outputs the contents of each customer's List to the standard output.
+*Specification: The input must be of the following format:
+- The first line will give the number of unique customers
+- The second line will give the total number of transactions ni the file
+- The third line will specify the size of the hash table
+- Each remaining line represents a transaction, and will contain 3 values. The first is
+  a customer ID (an int between 1 and the number of customers). The second value is a 
+  book ID (up to about 20 digits). The third value is a flag of either 1 or 0, indicating
+  if a recommendation should be printed(1) or not(0).
+
+ListList.h:
+Contains all of the declarations of the various functions which can
+be used to manipulate a linked list object. The linked list is comprised
+of node elements which can contain a single 'long long' variable, an
+'int' variable, and a ListListRef variable.
+
+ListList.c:
+Contains the full implementation of all of the functions declared in
+ListList.h, as well as the declarations of the underlying structs.
+
+ListListdr.c:
+Contains a program which tests all functions declared in ListList.h for errors.
+
+ListHash.h:
+Contains all of the declarations of the various functions which can
+be used to manipulate a linked list object. The linked list is comprised
+of node elements which can contain a single 'long long' variable, an
+'int' variable, and a ListListRef variable.
+
+ListHash.c:
+Contains the full implementation of all of the functions declared in
+ListList.h, as well as the declarations of the underlying structs.
+
+ListHashdr.c:
+Contains a program which tests all functions declared in ListList.h for errors.
+
+Makefile:
+A standard makefile which can be used to 'make' "ListListdr",or "ListHashdr", or
+"Recommendation" using the gcc compiler.
